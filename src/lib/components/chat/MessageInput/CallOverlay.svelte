@@ -166,6 +166,7 @@
 			console.log(res.text);
 
 			if (res.text !== '') {
+				//  TODO: implement streaming for response.
 				const _responses = await submitPrompt(res.text, { _raw: true });
 				console.log(_responses);
 			}

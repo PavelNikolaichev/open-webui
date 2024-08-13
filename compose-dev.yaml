@@ -37,7 +37,7 @@ services:
     env_file: ".env"
     environment:
      - ENV=dev
-     - WEBUI_AUTH=False
+    #  - WEBUI_AUTH=False
     volumes:
       - data:/app/backend/data
     extra_hosts:
